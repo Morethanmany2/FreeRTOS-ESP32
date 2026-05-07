@@ -1,0 +1,1190 @@
+Command: C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:\esp\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\esp\projects\Dual-core-balance\build\Dual-core-balance.elf C:\esp\projects\Dual-core-balance\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe' 'C:\esp\esp-idf\tools\idf.py' '-p' 'COM3'
+FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-4427-gc00874869b 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May  7 2026 12:13:01[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=08ad0h ( 35536) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018af8 vaddr=3ffb0000 size=02a7ch ( 10876) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b57c vaddr=40080000 size=04a9ch ( 19100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0cc1ch ( 52252) map[0m
+[0;32mI (132) esp_image: segment 4: paddr=0002cc44 vaddr=40084a9c size=06120h ( 24864) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=00032d6c vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (160) cpu_start: Multicore app[0m
+[0;32mI (169) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) app_init: Application information:[0m
+[0;32mI (175) app_init: Project name:     Dual-core-balance[0m
+[0;32mI (179) app_init: App version:      1[0m
+[0;32mI (183) app_init: Compile time:     May  7 2026 12:13:06[0m
+[0;32mI (188) app_init: ELF file SHA256:  666f2d615...[0m
+[0;32mI (192) app_init: ESP-IDF:          v6.1-dev-4427-gc00874869b[0m
+[0;32mI (198) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (201) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (205) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (209) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (216) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (221) heap_init: At 3FFB3428 len 0002CBD8 (178 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (231) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (237) heap_init: At 4008ABBC len 00015444 (85 KiB): IRAM[0m
+[0;33mW (243) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (255) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (262) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (275) main_task: Started on CPU0[0m
+[0;32mI (285) main_task: Calling app_main()[0m
+[0;32mI (285) DUAL_CORE: Producer -> Sent: 1 | Core: 0[0m
+[0;32mI (285) DUAL_CORE: Consumer -> Received: 1 | Core: 1[0m
+[0;32mI (1285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (1285) DUAL_CORE: Producer -> Sent: 2 | Core: 0[0m
+[0;32mI (1285) DUAL_CORE: Consumer -> Received: 2 | Core: 1[0m
+[0;32mI (1285) DUAL_CORE: Dual-Core System Started[0m
+[0;32mI (1285) DUAL_CORE: Free Heap: 286728 bytes | Core: 1[0m
+[0;32mI (1285) main_task: Returned from app_main()[0m
+[0;32mI (2285) DUAL_CORE: Producer -> Sent: 3 | Core: 0[0m
+[0;32mI (2285) DUAL_CORE: Consumer -> Received: 3 | Core: 1[0m
+[0;32mI (4285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (4285) DUAL_CORE: Producer -> Sent: 4 | Core: 0[0m
+[0;32mI (4285) DUAL_CORE: Consumer -> Received: 4 | Core: 1[0m
+[0;32mI (4295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (5285) DUAL_CORE: Producer -> Sent: 5 | Core: 0[0m
+[0;32mI (5285) DUAL_CORE: Consumer -> Received: 5 | Core: 1[0m
+[0;32mI (7285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (7285) DUAL_CORE: Producer -> Sent: 6 | Core: 0[0m
+[0;32mI (7285) DUAL_CORE: Consumer -> Received: 6 | Core: 1[0m
+[0;32mI (7295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (8285) DUAL_CORE: Producer -> Sent: 7 | Core: 0[0m
+[0;32mI (8285) DUAL_CORE: Consumer -> Received: 7 | Core: 1[0m
+[0;32mI (10285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (10285) DUAL_CORE: Producer -> Sent: 8 | Core: 0[0m
+[0;32mI (10285) DUAL_CORE: Consumer -> Received: 8 | Core: 1[0m
+[0;32mI (10295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (11285) DUAL_CORE: Producer -> Sent: 9 | Core: 0[0m
+[0;32mI (11285) DUAL_CORE: Consumer -> Received: 9 | Core: 1[0m
+[0;32mI (13285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (13285) DUAL_CORE: Producer -> Sent: 10 | Core: 0[0m
+[0;32mI (13285) DUAL_CORE: Consumer -> Received: 10 | Core: 1[0m
+[0;32mI (13295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (14285) DUAL_CORE: Producer -> Sent: 11 | Core: 0[0m
+[0;32mI (14285) DUAL_CORE: Consumer -> Received: 11 | Core: 1[0m
+[0;32mI (16285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (16285) DUAL_CORE: Producer -> Sent: 12 | Core: 0[0m
+[0;32mI (16285) DUAL_CORE: Consumer -> Received: 12 | Core: 1[0m
+[0;32mI (16295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (17285) DUAL_CORE: Producer -> Sent: 13 | Core: 0[0m
+[0;32mI (17285) DUAL_CORE: Consumer -> Received: 13 | Core: 1[0m
+[0;32mI (19285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (19285) DUAL_CORE: Producer -> Sent: 14 | Core: 0[0m
+[0;32mI (19285) DUAL_CORE: Consumer -> Received: 14 | Core: 1[0m
+[0;32mI (19295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (20285) DUAL_CORE: Producer -> Sent: 15 | Core: 0[0m
+[0;32mI (20285) DUAL_CORE: Consumer -> Received: 15 | Core: 1[0m
+[0;32mI (22285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (22285) DUAL_CORE: Producer -> Sent: 16 | Core: 0[0m
+[0;32mI (22285) DUAL_CORE: Consumer -> Received: 16 | Core: 1[0m
+[0;32mI (22295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (23285) DUAL_CORE: Producer -> Sent: 17 | Core: 0[0m
+[0;32mI (23285) DUAL_CORE: Consumer -> Received: 17 | Core: 1[0m
+[0;32mI (25285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (25285) DUAL_CORE: Producer -> Sent: 18 | Core: 0[0m
+[0;32mI (25285) DUAL_CORE: Consumer -> Received: 18 | Core: 1[0m
+[0;32mI (25295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (26285) DUAL_CORE: Producer -> Sent: 19 | Core: 0[0m
+[0;32mI (26285) DUAL_CORE: Consumer -> Received: 19 | Core: 1[0m
+[0;32mI (28285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (28285) DUAL_CORE: Producer -> Sent: 20 | Core: 0[0m
+[0;32mI (28285) DUAL_CORE: Consumer -> Received: 20 | Core: 1[0m
+[0;32mI (28295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (29285) DUAL_CORE: Producer -> Sent: 21 | Core: 0[0m
+[0;32mI (29285) DUAL_CORE: Consumer -> Received: 21 | Core: 1[0m
+[0;32mI (31285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (31285) DUAL_CORE: Producer -> Sent: 22 | Core: 0[0m
+[0;32mI (31285) DUAL_CORE: Consumer -> Received: 22 | Core: 1[0m
+[0;32mI (31295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (32285) DUAL_CORE: Producer -> Sent: 23 | Core: 0[0m
+[0;32mI (32285) DUAL_CORE: Consumer -> Received: 23 | Core: 1[0m
+[0;32mI (34285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (34285) DUAL_CORE: Producer -> Sent: 24 | Core: 0[0m
+[0;32mI (34285) DUAL_CORE: Consumer -> Received: 24 | Core: 1[0m
+[0;32mI (34295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (35285) DUAL_CORE: Producer -> Sent: 25 | Core: 0[0m
+[0;32mI (35285) DUAL_CORE: Consumer -> Received: 25 | Core: 1[0m
+[0;32mI (37285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (37285) DUAL_CORE: Producer -> Sent: 26 | Core: 0[0m
+[0;32mI (37285) DUAL_CORE: Consumer -> Received: 26 | Core: 1[0m
+[0;32mI (37295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (38285) DUAL_CORE: Producer -> Sent: 27 | Core: 0[0m
+[0;32mI (38285) DUAL_CORE: Consumer -> Received: 27 | Core: 1[0m
+[0;32mI (40285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (40285) DUAL_CORE: Producer -> Sent: 28 | Core: 0[0m
+[0;32mI (40285) DUAL_CORE: Consumer -> Received: 28 | Core: 1[0m
+[0;32mI (40295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (41285) DUAL_CORE: Producer -> Sent: 29 | Core: 0[0m
+[0;32mI (41285) DUAL_CORE: Consumer -> Received: 29 | Core: 1[0m
+[0;32mI (43285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (43285) DUAL_CORE: Producer -> Sent: 30 | Core: 0[0m
+[0;32mI (43285) DUAL_CORE: Consumer -> Received: 30 | Core: 1[0m
+[0;32mI (43295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (44285) DUAL_CORE: Producer -> Sent: 31 | Core: 0[0m
+[0;32mI (44285) DUAL_CORE: Consumer -> Received: 31 | Core: 1[0m
+[0;32mI (46285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (46285) DUAL_CORE: Producer -> Sent: 32 | Core: 0[0m
+[0;32mI (46285) DUAL_CORE: Consumer -> Received: 32 | Core: 1[0m
+[0;32mI (46295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (47285) DUAL_CORE: Producer -> Sent: 33 | Core: 0[0m
+[0;32mI (47285) DUAL_CORE: Consumer -> Received: 33 | Core: 1[0m
+[0;32mI (49285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (49285) DUAL_CORE: Producer -> Sent: 34 | Core: 0[0m
+[0;32mI (49285) DUAL_CORE: Consumer -> Received: 34 | Core: 1[0m
+[0;32mI (49295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (50285) DUAL_CORE: Producer -> Sent: 35 | Core: 0[0m
+[0;32mI (50285) DUAL_CORE: Consumer -> Received: 35 | Core: 1[0m
+[0;32mI (52285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (52285) DUAL_CORE: Producer -> Sent: 36 | Core: 0[0m
+[0;32mI (52285) DUAL_CORE: Consumer -> Received: 36 | Core: 1[0m
+[0;32mI (52295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (53285) DUAL_CORE: Producer -> Sent: 37 | Core: 0[0m
+[0;32mI (53285) DUAL_CORE: Consumer -> Received: 37 | Core: 1[0m
+[0;32mI (55285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (55285) DUAL_CORE: Producer -> Sent: 38 | Core: 0[0m
+[0;32mI (55285) DUAL_CORE: Consumer -> Received: 38 | Core: 1[0m
+[0;32mI (55295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (56285) DUAL_CORE: Producer -> Sent: 39 | Core: 0[0m
+[0;32mI (56285) DUAL_CORE: Consumer -> Received: 39 | Core: 1[0m
+[0;32mI (58285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (58285) DUAL_CORE: Producer -> Sent: 40 | Core: 0[0m
+[0;32mI (58285) DUAL_CORE: Consumer -> Received: 40 | Core: 1[0m
+[0;32mI (58295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (59285) DUAL_CORE: Producer -> Sent: 41 | Core: 0[0m
+[0;32mI (59285) DUAL_CORE: Consumer -> Received: 41 | Core: 1[0m
+[0;32mI (61285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (61285) DUAL_CORE: Producer -> Sent: 42 | Core: 0[0m
+[0;32mI (61285) DUAL_CORE: Consumer -> Received: 42 | Core: 1[0m
+[0;32mI (61295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (62285) DUAL_CORE: Producer -> Sent: 43 | Core: 0[0m
+[0;32mI (62285) DUAL_CORE: Consumer -> Received: 43 | Core: 1[0m
+[0;32mI (64285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (64285) DUAL_CORE: Producer -> Sent: 44 | Core: 0[0m
+[0;32mI (64285) DUAL_CORE: Consumer -> Received: 44 | Core: 1[0m
+[0;32mI (64295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (65285) DUAL_CORE: Producer -> Sent: 45 | Core: 0[0m
+[0;32mI (65285) DUAL_CORE: Consumer -> Received: 45 | Core: 1[0m
+[0;32mI (67285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (67285) DUAL_CORE: Producer -> Sent: 46 | Core: 0[0m
+[0;32mI (67285) DUAL_CORE: Consumer -> Received: 46 | Core: 1[0m
+[0;32mI (67295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (68285) DUAL_CORE: Producer -> Sent: 47 | Core: 0[0m
+[0;32mI (68285) DUAL_CORE: Consumer -> Received: 47 | Core: 1[0m
+[0;32mI (70285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (70285) DUAL_CORE: Producer -> Sent: 48 | Core: 0[0m
+[0;32mI (70285) DUAL_CORE: Consumer -> Received: 48 | Core: 1[0m
+[0;32mI (70295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (71285) DUAL_CORE: Producer -> Sent: 49 | Core: 0[0m
+[0;32mI (71285) DUAL_CORE: Consumer -> Received: 49 | Core: 1[0m
+[0;32mI (73285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (73285) DUAL_CORE: Producer -> Sent: 50 | Core: 0[0m
+[0;32mI (73285) DUAL_CORE: Consumer -> Received: 50 | Core: 1[0m
+[0;32mI (73295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (74285) DUAL_CORE: Producer -> Sent: 51 | Core: 0[0m
+[0;32mI (74285) DUAL_CORE: Consumer -> Received: 51 | Core: 1[0m
+[0;32mI (76285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (76285) DUAL_CORE: Producer -> Sent: 52 | Core: 0[0m
+[0;32mI (76285) DUAL_CORE: Consumer -> Received: 52 | Core: 1[0m
+[0;32mI (76295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (77285) DUAL_CORE: Producer -> Sent: 53 | Core: 0[0m
+[0;32mI (77285) DUAL_CORE: Consumer -> Received: 53 | Core: 1[0m
+[0;32mI (79285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (79285) DUAL_CORE: Producer -> Sent: 54 | Core: 0[0m
+[0;32mI (79285) DUAL_CORE: Consumer -> Received: 54 | Core: 1[0m
+[0;32mI (79295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (80285) DUAL_CORE: Producer -> Sent: 55 | Core: 0[0m
+[0;32mI (80285) DUAL_CORE: Consumer -> Received: 55 | Core: 1[0m
+[0;32mI (82285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (82285) DUAL_CORE: Producer -> Sent: 56 | Core: 0[0m
+[0;32mI (82285) DUAL_CORE: Consumer -> Received: 56 | Core: 1[0m
+[0;32mI (82295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (83285) DUAL_CORE: Producer -> Sent: 57 | Core: 0[0m
+[0;32mI (83285) DUAL_CORE: Consumer -> Received: 57 | Core: 1[0m
+[0;32mI (85285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (85285) DUAL_CORE: Producer -> Sent: 58 | Core: 0[0m
+[0;32mI (85285) DUAL_CORE: Consumer -> Received: 58 | Core: 1[0m
+[0;32mI (85295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (86285) DUAL_CORE: Producer -> Sent: 59 | Core: 0[0m
+[0;32mI (86285) DUAL_CORE: Consumer -> Received: 59 | Core: 1[0m
+[0;32mI (88285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (88285) DUAL_CORE: Producer -> Sent: 60 | Core: 0[0m
+[0;32mI (88285) DUAL_CORE: Consumer -> Received: 60 | Core: 1[0m
+[0;32mI (88295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (89285) DUAL_CORE: Producer -> Sent: 61 | Core: 0[0m
+[0;32mI (89285) DUAL_CORE: Consumer -> Received: 61 | Core: 1[0m
+[0;32mI (91285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (91285) DUAL_CORE: Producer -> Sent: 62 | Core: 0[0m
+[0;32mI (91285) DUAL_CORE: Consumer -> Received: 62 | Core: 1[0m
+[0;32mI (91295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (92285) DUAL_CORE: Producer -> Sent: 63 | Core: 0[0m
+[0;32mI (92285) DUAL_CORE: Consumer -> Received: 63 | Core: 1[0m
+[0;32mI (94285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (94285) DUAL_CORE: Producer -> Sent: 64 | Core: 0[0m
+[0;32mI (94285) DUAL_CORE: Consumer -> Received: 64 | Core: 1[0m
+[0;32mI (94295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (95285) DUAL_CORE: Producer -> Sent: 65 | Core: 0[0m
+[0;32mI (95285) DUAL_CORE: Consumer -> Received: 65 | Core: 1[0m
+[0;32mI (97285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (97285) DUAL_CORE: Producer -> Sent: 66 | Core: 0[0m
+[0;32mI (97285) DUAL_CORE: Consumer -> Received: 66 | Core: 1[0m
+[0;32mI (97295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (98285) DUAL_CORE: Producer -> Sent: 67 | Core: 0[0m
+[0;32mI (98285) DUAL_CORE: Consumer -> Received: 67 | Core: 1[0m
+[0;32mI (100285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (100285) DUAL_CORE: Producer -> Sent: 68 | Core: 0[0m
+[0;32mI (100285) DUAL_CORE: Consumer -> Received: 68 | Core: 1[0m
+[0;32mI (100295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (101285) DUAL_CORE: Producer -> Sent: 69 | Core: 0[0m
+[0;32mI (101285) DUAL_CORE: Consumer -> Received: 69 | Core: 1[0m
+[0;32mI (103285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (103285) DUAL_CORE: Producer -> Sent: 70 | Core: 0[0m
+[0;32mI (103285) DUAL_CORE: Consumer -> Received: 70 | Core: 1[0m
+[0;32mI (103295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (104285) DUAL_CORE: Producer -> Sent: 71 | Core: 0[0m
+[0;32mI (104285) DUAL_CORE: Consumer -> Received: 71 | Core: 1[0m
+[0;32mI (106285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (106285) DUAL_CORE: Producer -> Sent: 72 | Core: 0[0m
+[0;32mI (106285) DUAL_CORE: Consumer -> Received: 72 | Core: 1[0m
+[0;32mI (106295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (107285) DUAL_CORE: Producer -> Sent: 73 | Core: 0[0m
+[0;32mI (107285) DUAL_CORE: Consumer -> Received: 73 | Core: 1[0m
+[0;32mI (109285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (109285) DUAL_CORE: Producer -> Sent: 74 | Core: 0[0m
+[0;32mI (109285) DUAL_CORE: Consumer -> Received: 74 | Core: 1[0m
+[0;32mI (109295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (110285) DUAL_CORE: Producer -> Sent: 75 | Core: 0[0m
+[0;32mI (110285) DUAL_CORE: Consumer -> Received: 75 | Core: 1[0m
+[0;32mI (112285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (112285) DUAL_CORE: Producer -> Sent: 76 | Core: 0[0m
+[0;32mI (112285) DUAL_CORE: Consumer -> Received: 76 | Core: 1[0m
+[0;32mI (112295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (113285) DUAL_CORE: Producer -> Sent: 77 | Core: 0[0m
+[0;32mI (113285) DUAL_CORE: Consumer -> Received: 77 | Core: 1[0m
+[0;32mI (115285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (115285) DUAL_CORE: Producer -> Sent: 78 | Core: 0[0m
+[0;32mI (115285) DUAL_CORE: Consumer -> Received: 78 | Core: 1[0m
+[0;32mI (115295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (116285) DUAL_CORE: Producer -> Sent: 79 | Core: 0[0m
+[0;32mI (116285) DUAL_CORE: Consumer -> Received: 79 | Core: 1[0m
+[0;32mI (118285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (118285) DUAL_CORE: Producer -> Sent: 80 | Core: 0[0m
+[0;32mI (118285) DUAL_CORE: Consumer -> Received: 80 | Core: 1[0m
+[0;32mI (118295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (119285) DUAL_CORE: Producer -> Sent: 81 | Core: 0[0m
+[0;32mI (119285) DUAL_CORE: Consumer -> Received: 81 | Core: 1[0m
+[0;32mI (121285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (121285) DUAL_CORE: Producer -> Sent: 82 | Core: 0[0m
+[0;32mI (121285) DUAL_CORE: Consumer -> Received: 82 | Core: 1[0m
+[0;32mI (121295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (122285) DUAL_CORE: Producer -> Sent: 83 | Core: 0[0m
+[0;32mI (122285) DUAL_CORE: Consumer -> Received: 83 | Core: 1[0m
+[0;32mI (124285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (124285) DUAL_CORE: Producer -> Sent: 84 | Core: 0[0m
+[0;32mI (124285) DUAL_CORE: Consumer -> Received: 84 | Core: 1[0m
+[0;32mI (124295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (125285) DUAL_CORE: Producer -> Sent: 85 | Core: 0[0m
+[0;32mI (125285) DUAL_CORE: Consumer -> Received: 85 | Core: 1[0m
+[0;32mI (127285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (127285) DUAL_CORE: Producer -> Sent: 86 | Core: 0[0m
+[0;32mI (127285) DUAL_CORE: Consumer -> Received: 86 | Core: 1[0m
+[0;32mI (127295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (128285) DUAL_CORE: Producer -> Sent: 87 | Core: 0[0m
+[0;32mI (128285) DUAL_CORE: Consumer -> Received: 87 | Core: 1[0m
+[0;32mI (130285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (130285) DUAL_CORE: Producer -> Sent: 88 | Core: 0[0m
+[0;32mI (130285) DUAL_CORE: Consumer -> Received: 88 | Core: 1[0m
+[0;32mI (130295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (131285) DUAL_CORE: Producer -> Sent: 89 | Core: 0[0m
+[0;32mI (131285) DUAL_CORE: Consumer -> Received: 89 | Core: 1[0m
+[0;32mI (133285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (133285) DUAL_CORE: Producer -> Sent: 90 | Core: 0[0m
+[0;32mI (133285) DUAL_CORE: Consumer -> Received: 90 | Core: 1[0m
+[0;32mI (133295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (134285) DUAL_CORE: Producer -> Sent: 91 | Core: 0[0m
+[0;32mI (134285) DUAL_CORE: Consumer -> Received: 91 | Core: 1[0m
+[0;32mI (136285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (136285) DUAL_CORE: Producer -> Sent: 92 | Core: 0[0m
+[0;32mI (136285) DUAL_CORE: Consumer -> Received: 92 | Core: 1[0m
+[0;32mI (136295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (137285) DUAL_CORE: Producer -> Sent: 93 | Core: 0[0m
+[0;32mI (137285) DUAL_CORE: Consumer -> Received: 93 | Core: 1[0m
+[0;32mI (139285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (139285) DUAL_CORE: Producer -> Sent: 94 | Core: 0[0m
+[0;32mI (139285) DUAL_CORE: Consumer -> Received: 94 | Core: 1[0m
+[0;32mI (139295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (140285) DUAL_CORE: Producer -> Sent: 95 | Core: 0[0m
+[0;32mI (140285) DUAL_CORE: Consumer -> Received: 95 | Core: 1[0m
+[0;32mI (142285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (142285) DUAL_CORE: Producer -> Sent: 96 | Core: 0[0m
+[0;32mI (142285) DUAL_CORE: Consumer -> Received: 96 | Core: 1[0m
+[0;32mI (142295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (143285) DUAL_CORE: Producer -> Sent: 97 | Core: 0[0m
+[0;32mI (143285) DUAL_CORE: Consumer -> Received: 97 | Core: 1[0m
+[0;32mI (145285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (145285) DUAL_CORE: Producer -> Sent: 98 | Core: 0[0m
+[0;32mI (145285) DUAL_CORE: Consumer -> Received: 98 | Core: 1[0m
+[0;32mI (145295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (146285) DUAL_CORE: Producer -> Sent: 99 | Core: 0[0m
+[0;32mI (146285) DUAL_CORE: Consumer -> Received: 99 | Core: 1[0m
+[0;32mI (148285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (148285) DUAL_CORE: Producer -> Sent: 100 | Core: 0[0m
+[0;32mI (148285) DUAL_CORE: Consumer -> Received: 100 | Core: 1[0m
+[0;32mI (148295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (149285) DUAL_CORE: Producer -> Sent: 101 | Core: 0[0m
+[0;32mI (149285) DUAL_CORE: Consumer -> Received: 101 | Core: 1[0m
+[0;32mI (151285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (151285) DUAL_CORE: Producer -> Sent: 102 | Core: 0[0m
+[0;32mI (151285) DUAL_CORE: Consumer -> Received: 102 | Core: 1[0m
+[0;32mI (151295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (152285) DUAL_CORE: Producer -> Sent: 103 | Core: 0[0m
+[0;32mI (152285) DUAL_CORE: Consumer -> Received: 103 | Core: 1[0m
+[0;32mI (154285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (154285) DUAL_CORE: Producer -> Sent: 104 | Core: 0[0m
+[0;32mI (154285) DUAL_CORE: Consumer -> Received: 104 | Core: 1[0m
+[0;32mI (154295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (155285) DUAL_CORE: Producer -> Sent: 105 | Core: 0[0m
+[0;32mI (155285) DUAL_CORE: Consumer -> Received: 105 | Core: 1[0m
+[0;32mI (157285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (157285) DUAL_CORE: Producer -> Sent: 106 | Core: 0[0m
+[0;32mI (157285) DUAL_CORE: Consumer -> Received: 106 | Core: 1[0m
+[0;32mI (157295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (158285) DUAL_CORE: Producer -> Sent: 107 | Core: 0[0m
+[0;32mI (158285) DUAL_CORE: Consumer -> Received: 107 | Core: 1[0m
+[0;32mI (160285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (160285) DUAL_CORE: Producer -> Sent: 108 | Core: 0[0m
+[0;32mI (160285) DUAL_CORE: Consumer -> Received: 108 | Core: 1[0m
+[0;32mI (160295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (161285) DUAL_CORE: Producer -> Sent: 109 | Core: 0[0m
+[0;32mI (161285) DUAL_CORE: Consumer -> Received: 109 | Core: 1[0m
+[0;32mI (163285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (163285) DUAL_CORE: Producer -> Sent: 110 | Core: 0[0m
+[0;32mI (163285) DUAL_CORE: Consumer -> Received: 110 | Core: 1[0m
+[0;32mI (163295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (164285) DUAL_CORE: Producer -> Sent: 111 | Core: 0[0m
+[0;32mI (164285) DUAL_CORE: Consumer -> Received: 111 | Core: 1[0m
+[0;32mI (166285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (166285) DUAL_CORE: Producer -> Sent: 112 | Core: 0[0m
+[0;32mI (166285) DUAL_CORE: Consumer -> Received: 112 | Core: 1[0m
+[0;32mI (166295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (167285) DUAL_CORE: Producer -> Sent: 113 | Core: 0[0m
+[0;32mI (167285) DUAL_CORE: Consumer -> Received: 113 | Core: 1[0m
+[0;32mI (169285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (169285) DUAL_CORE: Producer -> Sent: 114 | Core: 0[0m
+[0;32mI (169285) DUAL_CORE: Consumer -> Received: 114 | Core: 1[0m
+[0;32mI (169295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (170285) DUAL_CORE: Producer -> Sent: 115 | Core: 0[0m
+[0;32mI (170285) DUAL_CORE: Consumer -> Received: 115 | Core: 1[0m
+[0;32mI (172285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (172285) DUAL_CORE: Producer -> Sent: 116 | Core: 0[0m
+[0;32mI (172285) DUAL_CORE: Consumer -> Received: 116 | Core: 1[0m
+[0;32mI (172295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (173285) DUAL_CORE: Producer -> Sent: 117 | Core: 0[0m
+[0;32mI (173285) DUAL_CORE: Consumer -> Received: 117 | Core: 1[0m
+[0;32mI (175285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (175285) DUAL_CORE: Producer -> Sent: 118 | Core: 0[0m
+[0;32mI (175285) DUAL_CORE: Consumer -> Received: 118 | Core: 1[0m
+[0;32mI (175295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (176285) DUAL_CORE: Producer -> Sent: 119 | Core: 0[0m
+[0;32mI (176285) DUAL_CORE: Consumer -> Received: 119 | Core: 1[0m
+[0;32mI (178285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (178285) DUAL_CORE: Producer -> Sent: 120 | Core: 0[0m
+[0;32mI (178285) DUAL_CORE: Consumer -> Received: 120 | Core: 1[0m
+[0;32mI (178295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (179285) DUAL_CORE: Producer -> Sent: 121 | Core: 0[0m
+[0;32mI (179285) DUAL_CORE: Consumer -> Received: 121 | Core: 1[0m
+[0;32mI (181285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (181285) DUAL_CORE: Producer -> Sent: 122 | Core: 0[0m
+[0;32mI (181285) DUAL_CORE: Consumer -> Received: 122 | Core: 1[0m
+[0;32mI (181295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (182285) DUAL_CORE: Producer -> Sent: 123 | Core: 0[0m
+[0;32mI (182285) DUAL_CORE: Consumer -> Received: 123 | Core: 1[0m
+[0;32mI (184285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (184285) DUAL_CORE: Producer -> Sent: 124 | Core: 0[0m
+[0;32mI (184285) DUAL_CORE: Consumer -> Received: 124 | Core: 1[0m
+[0;32mI (184295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (185285) DUAL_CORE: Producer -> Sent: 125 | Core: 0[0m
+[0;32mI (185285) DUAL_CORE: Consumer -> Received: 125 | Core: 1[0m
+[0;32mI (187285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (187285) DUAL_CORE: Producer -> Sent: 126 | Core: 0[0m
+[0;32mI (187285) DUAL_CORE: Consumer -> Received: 126 | Core: 1[0m
+[0;32mI (187295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (188285) DUAL_CORE: Producer -> Sent: 127 | Core: 0[0m
+[0;32mI (188285) DUAL_CORE: Consumer -> Received: 127 | Core: 1[0m
+[0;32mI (190285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (190285) DUAL_CORE: Producer -> Sent: 128 | Core: 0[0m
+[0;32mI (190285) DUAL_CORE: Consumer -> Received: 128 | Core: 1[0m
+[0;32mI (190295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (191285) DUAL_CORE: Producer -> Sent: 129 | Core: 0[0m
+[0;32mI (191285) DUAL_CORE: Consumer -> Received: 129 | Core: 1[0m
+[0;32mI (193285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (193285) DUAL_CORE: Producer -> Sent: 130 | Core: 0[0m
+[0;32mI (193285) DUAL_CORE: Consumer -> Received: 130 | Core: 1[0m
+[0;32mI (193295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (194285) DUAL_CORE: Producer -> Sent: 131 | Core: 0[0m
+[0;32mI (194285) DUAL_CORE: Consumer -> Received: 131 | Core: 1[0m
+[0;32mI (196285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (196285) DUAL_CORE: Producer -> Sent: 132 | Core: 0[0m
+[0;32mI (196285) DUAL_CORE: Consumer -> Received: 132 | Core: 1[0m
+[0;32mI (196295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (197285) DUAL_CORE: Producer -> Sent: 133 | Core: 0[0m
+[0;32mI (197285) DUAL_CORE: Consumer -> Received: 133 | Core: 1[0m
+[0;32mI (199285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (199285) DUAL_CORE: Producer -> Sent: 134 | Core: 0[0m
+[0;32mI (199285) DUAL_CORE: Consumer -> Received: 134 | Core: 1[0m
+[0;32mI (199295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (200285) DUAL_CORE: Producer -> Sent: 135 | Core: 0[0m
+[0;32mI (200285) DUAL_CORE: Consumer -> Received: 135 | Core: 1[0m
+[0;32mI (202285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (202285) DUAL_CORE: Producer -> Sent: 136 | Core: 0[0m
+[0;32mI (202285) DUAL_CORE: Consumer -> Received: 136 | Core: 1[0m
+[0;32mI (202295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (203285) DUAL_CORE: Producer -> Sent: 137 | Core: 0[0m
+[0;32mI (203285) DUAL_CORE: Consumer -> Received: 137 | Core: 1[0m
+[0;32mI (205285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (205285) DUAL_CORE: Producer -> Sent: 138 | Core: 0[0m
+[0;32mI (205285) DUAL_CORE: Consumer -> Received: 138 | Core: 1[0m
+[0;32mI (205295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (206285) DUAL_CORE: Producer -> Sent: 139 | Core: 0[0m
+[0;32mI (206285) DUAL_CORE: Consumer -> Received: 139 | Core: 1[0m
+[0;32mI (208285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (208285) DUAL_CORE: Producer -> Sent: 140 | Core: 0[0m
+[0;32mI (208285) DUAL_CORE: Consumer -> Received: 140 | Core: 1[0m
+[0;32mI (208295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (209285) DUAL_CORE: Producer -> Sent: 141 | Core: 0[0m
+[0;32mI (209285) DUAL_CORE: Consumer -> Received: 141 | Core: 1[0m
+[0;32mI (211285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (211285) DUAL_CORE: Producer -> Sent: 142 | Core: 0[0m
+[0;32mI (211285) DUAL_CORE: Consumer -> Received: 142 | Core: 1[0m
+[0;32mI (211295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (212285) DUAL_CORE: Producer -> Sent: 143 | Core: 0[0m
+[0;32mI (212285) DUAL_CORE: Consumer -> Received: 143 | Core: 1[0m
+[0;32mI (214285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (214285) DUAL_CORE: Producer -> Sent: 144 | Core: 0[0m
+[0;32mI (214285) DUAL_CORE: Consumer -> Received: 144 | Core: 1[0m
+[0;32mI (214295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (215285) DUAL_CORE: Producer -> Sent: 145 | Core: 0[0m
+[0;32mI (215285) DUAL_CORE: Consumer -> Received: 145 | Core: 1[0m
+[0;32mI (217285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (217285) DUAL_CORE: Producer -> Sent: 146 | Core: 0[0m
+[0;32mI (217285) DUAL_CORE: Consumer -> Received: 146 | Core: 1[0m
+[0;32mI (217295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (218285) DUAL_CORE: Producer -> Sent: 147 | Core: 0[0m
+[0;32mI (218285) DUAL_CORE: Consumer -> Received: 147 | Core: 1[0m
+[0;32mI (220285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (220285) DUAL_CORE: Producer -> Sent: 148 | Core: 0[0m
+[0;32mI (220285) DUAL_CORE: Consumer -> Received: 148 | Core: 1[0m
+[0;32mI (220295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (221285) DUAL_CORE: Producer -> Sent: 149 | Core: 0[0m
+[0;32mI (221285) DUAL_CORE: Consumer -> Received: 149 | Core: 1[0m
+[0;32mI (223285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (223285) DUAL_CORE: Producer -> Sent: 150 | Core: 0[0m
+[0;32mI (223285) DUAL_CORE: Consumer -> Received: 150 | Core: 1[0m
+[0;32mI (223295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (224285) DUAL_CORE: Producer -> Sent: 151 | Core: 0[0m
+[0;32mI (224285) DUAL_CORE: Consumer -> Received: 151 | Core: 1[0m
+[0;32mI (226285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (226285) DUAL_CORE: Producer -> Sent: 152 | Core: 0[0m
+[0;32mI (226285) DUAL_CORE: Consumer -> Received: 152 | Core: 1[0m
+[0;32mI (226295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (227285) DUAL_CORE: Producer -> Sent: 153 | Core: 0[0m
+[0;32mI (227285) DUAL_CORE: Consumer -> Received: 153 | Core: 1[0m
+[0;32mI (229285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (229285) DUAL_CORE: Producer -> Sent: 154 | Core: 0[0m
+[0;32mI (229285) DUAL_CORE: Consumer -> Received: 154 | Core: 1[0m
+[0;32mI (229295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (230285) DUAL_CORE: Producer -> Sent: 155 | Core: 0[0m
+[0;32mI (230285) DUAL_CORE: Consumer -> Received: 155 | Core: 1[0m
+[0;32mI (232285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (232285) DUAL_CORE: Producer -> Sent: 156 | Core: 0[0m
+[0;32mI (232285) DUAL_CORE: Consumer -> Received: 156 | Core: 1[0m
+[0;32mI (232295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (233285) DUAL_CORE: Producer -> Sent: 157 | Core: 0[0m
+[0;32mI (233285) DUAL_CORE: Consumer -> Received: 157 | Core: 1[0m
+[0;32mI (235285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (235285) DUAL_CORE: Producer -> Sent: 158 | Core: 0[0m
+[0;32mI (235285) DUAL_CORE: Consumer -> Received: 158 | Core: 1[0m
+[0;32mI (235295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (236285) DUAL_CORE: Producer -> Sent: 159 | Core: 0[0m
+[0;32mI (236285) DUAL_CORE: Consumer -> Received: 159 | Core: 1[0m
+[0;32mI (238285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (238285) DUAL_CORE: Producer -> Sent: 160 | Core: 0[0m
+[0;32mI (238285) DUAL_CORE: Consumer -> Received: 160 | Core: 1[0m
+[0;32mI (238295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (239285) DUAL_CORE: Producer -> Sent: 161 | Core: 0[0m
+[0;32mI (239285) DUAL_CORE: Consumer -> Received: 161 | Core: 1[0m
+[0;32mI (241285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (241285) DUAL_CORE: Producer -> Sent: 162 | Core: 0[0m
+[0;32mI (241285) DUAL_CORE: Consumer -> Received: 162 | Core: 1[0m
+[0;32mI (241295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (242285) DUAL_CORE: Producer -> Sent: 163 | Core: 0[0m
+[0;32mI (242285) DUAL_CORE: Consumer -> Received: 163 | Core: 1[0m
+[0;32mI (244285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (244285) DUAL_CORE: Producer -> Sent: 164 | Core: 0[0m
+[0;32mI (244285) DUAL_CORE: Consumer -> Received: 164 | Core: 1[0m
+[0;32mI (244295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (245285) DUAL_CORE: Producer -> Sent: 165 | Core: 0[0m
+[0;32mI (245285) DUAL_CORE: Consumer -> Received: 165 | Core: 1[0m
+[0;32mI (247285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (247285) DUAL_CORE: Producer -> Sent: 166 | Core: 0[0m
+[0;32mI (247285) DUAL_CORE: Consumer -> Received: 166 | Core: 1[0m
+[0;32mI (247295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (248285) DUAL_CORE: Producer -> Sent: 167 | Core: 0[0m
+[0;32mI (248285) DUAL_CORE: Consumer -> Received: 167 | Core: 1[0m
+[0;32mI (250285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (250285) DUAL_CORE: Producer -> Sent: 168 | Core: 0[0m
+[0;32mI (250285) DUAL_CORE: Consumer -> Received: 168 | Core: 1[0m
+[0;32mI (250295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (251285) DUAL_CORE: Producer -> Sent: 169 | Core: 0[0m
+[0;32mI (251285) DUAL_CORE: Consumer -> Received: 169 | Core: 1[0m
+[0;32mI (253285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (253285) DUAL_CORE: Producer -> Sent: 170 | Core: 0[0m
+[0;32mI (253285) DUAL_CORE: Consumer -> Received: 170 | Core: 1[0m
+[0;32mI (253295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (254285) DUAL_CORE: Producer -> Sent: 171 | Core: 0[0m
+[0;32mI (254285) DUAL_CORE: Consumer -> Received: 171 | Core: 1[0m
+[0;32mI (256285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (256285) DUAL_CORE: Producer -> Sent: 172 | Core: 0[0m
+[0;32mI (256285) DUAL_CORE: Consumer -> Received: 172 | Core: 1[0m
+[0;32mI (256295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (257285) DUAL_CORE: Producer -> Sent: 173 | Core: 0[0m
+[0;32mI (257285) DUAL_CORE: Consumer -> Received: 173 | Core: 1[0m
+[0;32mI (259285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (259285) DUAL_CORE: Producer -> Sent: 174 | Core: 0[0m
+[0;32mI (259285) DUAL_CORE: Consumer -> Received: 174 | Core: 1[0m
+[0;32mI (259295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (260285) DUAL_CORE: Producer -> Sent: 175 | Core: 0[0m
+[0;32mI (260285) DUAL_CORE: Consumer -> Received: 175 | Core: 1[0m
+[0;32mI (262285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (262285) DUAL_CORE: Producer -> Sent: 176 | Core: 0[0m
+[0;32mI (262285) DUAL_CORE: Consumer -> Received: 176 | Core: 1[0m
+[0;32mI (262295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (263285) DUAL_CORE: Producer -> Sent: 177 | Core: 0[0m
+[0;32mI (263285) DUAL_CORE: Consumer -> Received: 177 | Core: 1[0m
+[0;32mI (265285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (265285) DUAL_CORE: Producer -> Sent: 178 | Core: 0[0m
+[0;32mI (265285) DUAL_CORE: Consumer -> Received: 178 | Core: 1[0m
+[0;32mI (265295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (266285) DUAL_CORE: Producer -> Sent: 179 | Core: 0[0m
+[0;32mI (266285) DUAL_CORE: Consumer -> Received: 179 | Core: 1[0m
+[0;32mI (268285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (268285) DUAL_CORE: Producer -> Sent: 180 | Core: 0[0m
+[0;32mI (268285) DUAL_CORE: Consumer -> Received: 180 | Core: 1[0m
+[0;32mI (268295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (269285) DUAL_CORE: Producer -> Sent: 181 | Core: 0[0m
+[0;32mI (269285) DUAL_CORE: Consumer -> Received: 181 | Core: 1[0m
+[0;32mI (271285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (271285) DUAL_CORE: Producer -> Sent: 182 | Core: 0[0m
+[0;32mI (271285) DUAL_CORE: Consumer -> Received: 182 | Core: 1[0m
+[0;32mI (271295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (272285) DUAL_CORE: Producer -> Sent: 183 | Core: 0[0m
+[0;32mI (272285) DUAL_CORE: Consumer -> Received: 183 | Core: 1[0m
+[0;32mI (274285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (274285) DUAL_CORE: Producer -> Sent: 184 | Core: 0[0m
+[0;32mI (274285) DUAL_CORE: Consumer -> Received: 184 | Core: 1[0m
+[0;32mI (274295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (275285) DUAL_CORE: Producer -> Sent: 185 | Core: 0[0m
+[0;32mI (275285) DUAL_CORE: Consumer -> Received: 185 | Core: 1[0m
+[0;32mI (277285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (277285) DUAL_CORE: Producer -> Sent: 186 | Core: 0[0m
+[0;32mI (277285) DUAL_CORE: Consumer -> Received: 186 | Core: 1[0m
+[0;32mI (277295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (278285) DUAL_CORE: Producer -> Sent: 187 | Core: 0[0m
+[0;32mI (278285) DUAL_CORE: Consumer -> Received: 187 | Core: 1[0m
+[0;32mI (280285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (280285) DUAL_CORE: Producer -> Sent: 188 | Core: 0[0m
+[0;32mI (280285) DUAL_CORE: Consumer -> Received: 188 | Core: 1[0m
+[0;32mI (280295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (281285) DUAL_CORE: Producer -> Sent: 189 | Core: 0[0m
+[0;32mI (281285) DUAL_CORE: Consumer -> Received: 189 | Core: 1[0m
+[0;32mI (283285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (283285) DUAL_CORE: Producer -> Sent: 190 | Core: 0[0m
+[0;32mI (283285) DUAL_CORE: Consumer -> Received: 190 | Core: 1[0m
+[0;32mI (283295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (284285) DUAL_CORE: Producer -> Sent: 191 | Core: 0[0m
+[0;32mI (284285) DUAL_CORE: Consumer -> Received: 191 | Core: 1[0m
+[0;32mI (286285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (286285) DUAL_CORE: Producer -> Sent: 192 | Core: 0[0m
+[0;32mI (286285) DUAL_CORE: Consumer -> Received: 192 | Core: 1[0m
+[0;32mI (286295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (287285) DUAL_CORE: Producer -> Sent: 193 | Core: 0[0m
+[0;32mI (287285) DUAL_CORE: Consumer -> Received: 193 | Core: 1[0m
+[0;32mI (289285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (289285) DUAL_CORE: Producer -> Sent: 194 | Core: 0[0m
+[0;32mI (289285) DUAL_CORE: Consumer -> Received: 194 | Core: 1[0m
+[0;32mI (289295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (290285) DUAL_CORE: Producer -> Sent: 195 | Core: 0[0m
+[0;32mI (290285) DUAL_CORE: Consumer -> Received: 195 | Core: 1[0m
+[0;32mI (292285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (292285) DUAL_CORE: Producer -> Sent: 196 | Core: 0[0m
+[0;32mI (292285) DUAL_CORE: Consumer -> Received: 196 | Core: 1[0m
+[0;32mI (292295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (293285) DUAL_CORE: Producer -> Sent: 197 | Core: 0[0m
+[0;32mI (293285) DUAL_CORE: Consumer -> Received: 197 | Core: 1[0m
+[0;32mI (295285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (295285) DUAL_CORE: Producer -> Sent: 198 | Core: 0[0m
+[0;32mI (295285) DUAL_CORE: Consumer -> Received: 198 | Core: 1[0m
+[0;32mI (295295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (296285) DUAL_CORE: Producer -> Sent: 199 | Core: 0[0m
+[0;32mI (296285) DUAL_CORE: Consumer -> Received: 199 | Core: 1[0m
+[0;32mI (298285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (298285) DUAL_CORE: Producer -> Sent: 200 | Core: 0[0m
+[0;32mI (298285) DUAL_CORE: Consumer -> Received: 200 | Core: 1[0m
+[0;32mI (298295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (299285) DUAL_CORE: Producer -> Sent: 201 | Core: 0[0m
+[0;32mI (299285) DUAL_CORE: Consumer -> Received: 201 | Core: 1[0m
+[0;32mI (301285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (301285) DUAL_CORE: Producer -> Sent: 202 | Core: 0[0m
+[0;32mI (301285) DUAL_CORE: Consumer -> Received: 202 | Core: 1[0m
+[0;32mI (301295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (302285) DUAL_CORE: Producer -> Sent: 203 | Core: 0[0m
+[0;32mI (302285) DUAL_CORE: Consumer -> Received: 203 | Core: 1[0m
+[0;32mI (304285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (304285) DUAL_CORE: Producer -> Sent: 204 | Core: 0[0m
+[0;32mI (304285) DUAL_CORE: Consumer -> Received: 204 | Core: 1[0m
+[0;32mI (304295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (305285) DUAL_CORE: Producer -> Sent: 205 | Core: 0[0m
+[0;32mI (305285) DUAL_CORE: Consumer -> Received: 205 | Core: 1[0m
+[0;32mI (307285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (307285) DUAL_CORE: Producer -> Sent: 206 | Core: 0[0m
+[0;32mI (307285) DUAL_CORE: Consumer -> Received: 206 | Core: 1[0m
+[0;32mI (307295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (308285) DUAL_CORE: Producer -> Sent: 207 | Core: 0[0m
+[0;32mI (308285) DUAL_CORE: Consumer -> Received: 207 | Core: 1[0m
+[0;32mI (310285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (310285) DUAL_CORE: Producer -> Sent: 208 | Core: 0[0m
+[0;32mI (310285) DUAL_CORE: Consumer -> Received: 208 | Core: 1[0m
+[0;32mI (310295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (311285) DUAL_CORE: Producer -> Sent: 209 | Core: 0[0m
+[0;32mI (311285) DUAL_CORE: Consumer -> Received: 209 | Core: 1[0m
+[0;32mI (313285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (313285) DUAL_CORE: Producer -> Sent: 210 | Core: 0[0m
+[0;32mI (313285) DUAL_CORE: Consumer -> Received: 210 | Core: 1[0m
+[0;32mI (313295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (314285) DUAL_CORE: Producer -> Sent: 211 | Core: 0[0m
+[0;32mI (314285) DUAL_CORE: Consumer -> Received: 211 | Core: 1[0m
+[0;32mI (316285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (316285) DUAL_CORE: Producer -> Sent: 212 | Core: 0[0m
+[0;32mI (316285) DUAL_CORE: Consumer -> Received: 212 | Core: 1[0m
+[0;32mI (316295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (317285) DUAL_CORE: Producer -> Sent: 213 | Core: 0[0m
+[0;32mI (317285) DUAL_CORE: Consumer -> Received: 213 | Core: 1[0m
+[0;32mI (319285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (319285) DUAL_CORE: Producer -> Sent: 214 | Core: 0[0m
+[0;32mI (319285) DUAL_CORE: Consumer -> Received: 214 | Core: 1[0m
+[0;32mI (319295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (320285) DUAL_CORE: Producer -> Sent: 215 | Core: 0[0m
+[0;32mI (320285) DUAL_CORE: Consumer -> Received: 215 | Core: 1[0m
+[0;32mI (322285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (322285) DUAL_CORE: Producer -> Sent: 216 | Core: 0[0m
+[0;32mI (322285) DUAL_CORE: Consumer -> Received: 216 | Core: 1[0m
+[0;32mI (322295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (323285) DUAL_CORE: Producer -> Sent: 217 | Core: 0[0m
+[0;32mI (323285) DUAL_CORE: Consumer -> Received: 217 | Core: 1[0m
+[0;32mI (325285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (325285) DUAL_CORE: Producer -> Sent: 218 | Core: 0[0m
+[0;32mI (325285) DUAL_CORE: Consumer -> Received: 218 | Core: 1[0m
+[0;32mI (325295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (326285) DUAL_CORE: Producer -> Sent: 219 | Core: 0[0m
+[0;32mI (326285) DUAL_CORE: Consumer -> Received: 219 | Core: 1[0m
+[0;32mI (328285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (328285) DUAL_CORE: Producer -> Sent: 220 | Core: 0[0m
+[0;32mI (328285) DUAL_CORE: Consumer -> Received: 220 | Core: 1[0m
+[0;32mI (328295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (329285) DUAL_CORE: Producer -> Sent: 221 | Core: 0[0m
+[0;32mI (329285) DUAL_CORE: Consumer -> Received: 221 | Core: 1[0m
+[0;32mI (331285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (331285) DUAL_CORE: Producer -> Sent: 222 | Core: 0[0m
+[0;32mI (331285) DUAL_CORE: Consumer -> Received: 222 | Core: 1[0m
+[0;32mI (331295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (332285) DUAL_CORE: Producer -> Sent: 223 | Core: 0[0m
+[0;32mI (332285) DUAL_CORE: Consumer -> Received: 223 | Core: 1[0m
+[0;32mI (334285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (334285) DUAL_CORE: Producer -> Sent: 224 | Core: 0[0m
+[0;32mI (334285) DUAL_CORE: Consumer -> Received: 224 | Core: 1[0m
+[0;32mI (334295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (335285) DUAL_CORE: Producer -> Sent: 225 | Core: 0[0m
+[0;32mI (335285) DUAL_CORE: Consumer -> Received: 225 | Core: 1[0m
+[0;32mI (337285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (337285) DUAL_CORE: Producer -> Sent: 226 | Core: 0[0m
+[0;32mI (337285) DUAL_CORE: Consumer -> Received: 226 | Core: 1[0m
+[0;32mI (337295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (338285) DUAL_CORE: Producer -> Sent: 227 | Core: 0[0m
+[0;32mI (338285) DUAL_CORE: Consumer -> Received: 227 | Core: 1[0m
+[0;32mI (340285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (340285) DUAL_CORE: Producer -> Sent: 228 | Core: 0[0m
+[0;32mI (340285) DUAL_CORE: Consumer -> Received: 228 | Core: 1[0m
+[0;32mI (340295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (341285) DUAL_CORE: Producer -> Sent: 229 | Core: 0[0m
+[0;32mI (341285) DUAL_CORE: Consumer -> Received: 229 | Core: 1[0m
+[0;32mI (343285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (343285) DUAL_CORE: Producer -> Sent: 230 | Core: 0[0m
+[0;32mI (343285) DUAL_CORE: Consumer -> Received: 230 | Core: 1[0m
+[0;32mI (343295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (344285) DUAL_CORE: Producer -> Sent: 231 | Core: 0[0m
+[0;32mI (344285) DUAL_CORE: Consumer -> Received: 231 | Core: 1[0m
+[0;32mI (346285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (346285) DUAL_CORE: Producer -> Sent: 232 | Core: 0[0m
+[0;32mI (346285) DUAL_CORE: Consumer -> Received: 232 | Core: 1[0m
+[0;32mI (346295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (347285) DUAL_CORE: Producer -> Sent: 233 | Core: 0[0m
+[0;32mI (347285) DUAL_CORE: Consumer -> Received: 233 | Core: 1[0m
+[0;32mI (349285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (349285) DUAL_CORE: Producer -> Sent: 234 | Core: 0[0m
+[0;32mI (349285) DUAL_CORE: Consumer -> Received: 234 | Core: 1[0m
+[0;32mI (349295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (350285) DUAL_CORE: Producer -> Sent: 235 | Core: 0[0m
+[0;32mI (350285) DUAL_CORE: Consumer -> Received: 235 | Core: 1[0m
+[0;32mI (352285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (352285) DUAL_CORE: Producer -> Sent: 236 | Core: 0[0m
+[0;32mI (352285) DUAL_CORE: Consumer -> Received: 236 | Core: 1[0m
+[0;32mI (352295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (353285) DUAL_CORE: Producer -> Sent: 237 | Core: 0[0m
+[0;32mI (353285) DUAL_CORE: Consumer -> Received: 237 | Core: 1[0m
+[0;32mI (355285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (355285) DUAL_CORE: Producer -> Sent: 238 | Core: 0[0m
+[0;32mI (355285) DUAL_CORE: Consumer -> Received: 238 | Core: 1[0m
+[0;32mI (355295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (356285) DUAL_CORE: Producer -> Sent: 239 | Core: 0[0m
+[0;32mI (356285) DUAL_CORE: Consumer -> Received: 239 | Core: 1[0m
+[0;32mI (358285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (358285) DUAL_CORE: Producer -> Sent: 240 | Core: 0[0m
+[0;32mI (358285) DUAL_CORE: Consumer -> Received: 240 | Core: 1[0m
+[0;32mI (358295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (359285) DUAL_CORE: Producer -> Sent: 241 | Core: 0[0m
+[0;32mI (359285) DUAL_CORE: Consumer -> Received: 241 | Core: 1[0m
+[0;32mI (361285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (361285) DUAL_CORE: Producer -> Sent: 242 | Core: 0[0m
+[0;32mI (361285) DUAL_CORE: Consumer -> Received: 242 | Core: 1[0m
+[0;32mI (361295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (362285) DUAL_CORE: Producer -> Sent: 243 | Core: 0[0m
+[0;32mI (362285) DUAL_CORE: Consumer -> Received: 243 | Core: 1[0m
+[0;32mI (364285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (364285) DUAL_CORE: Producer -> Sent: 244 | Core: 0[0m
+[0;32mI (364285) DUAL_CORE: Consumer -> Received: 244 | Core: 1[0m
+[0;32mI (364295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (365285) DUAL_CORE: Producer -> Sent: 245 | Core: 0[0m
+[0;32mI (365285) DUAL_CORE: Consumer -> Received: 245 | Core: 1[0m
+[0;32mI (367285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (367285) DUAL_CORE: Producer -> Sent: 246 | Core: 0[0m
+[0;32mI (367285) DUAL_CORE: Consumer -> Received: 246 | Core: 1[0m
+[0;32mI (367295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (368285) DUAL_CORE: Producer -> Sent: 247 | Core: 0[0m
+[0;32mI (368285) DUAL_CORE: Consumer -> Received: 247 | Core: 1[0m
+[0;32mI (370285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (370285) DUAL_CORE: Producer -> Sent: 248 | Core: 0[0m
+[0;32mI (370285) DUAL_CORE: Consumer -> Received: 248 | Core: 1[0m
+[0;32mI (370295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (371285) DUAL_CORE: Producer -> Sent: 249 | Core: 0[0m
+[0;32mI (371285) DUAL_CORE: Consumer -> Received: 249 | Core: 1[0m
+[0;32mI (373285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (373285) DUAL_CORE: Producer -> Sent: 250 | Core: 0[0m
+[0;32mI (373285) DUAL_CORE: Consumer -> Received: 250 | Core: 1[0m
+[0;32mI (373295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (374285) DUAL_CORE: Producer -> Sent: 251 | Core: 0[0m
+[0;32mI (374285) DUAL_CORE: Consumer -> Received: 251 | Core: 1[0m
+[0;32mI (376285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (376285) DUAL_CORE: Producer -> Sent: 252 | Core: 0[0m
+[0;32mI (376285) DUAL_CORE: Consumer -> Received: 252 | Core: 1[0m
+[0;32mI (376295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (377285) DUAL_CORE: Producer -> Sent: 253 | Core: 0[0m
+[0;32mI (377285) DUAL_CORE: Consumer -> Received: 253 | Core: 1[0m
+[0;32mI (379285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (379285) DUAL_CORE: Producer -> Sent: 254 | Core: 0[0m
+[0;32mI (379285) DUAL_CORE: Consumer -> Received: 254 | Core: 1[0m
+[0;32mI (379295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (380285) DUAL_CORE: Producer -> Sent: 255 | Core: 0[0m
+[0;32mI (380285) DUAL_CORE: Consumer -> Received: 255 | Core: 1[0m
+[0;32mI (382285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (382285) DUAL_CORE: Producer -> Sent: 256 | Core: 0[0m
+[0;32mI (382285) DUAL_CORE: Consumer -> Received: 256 | Core: 1[0m
+[0;32mI (382295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (383285) DUAL_CORE: Producer -> Sent: 257 | Core: 0[0m
+[0;32mI (383285) DUAL_CORE: Consumer -> Received: 257 | Core: 1[0m
+[0;32mI (385285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (385285) DUAL_CORE: Producer -> Sent: 258 | Core: 0[0m
+[0;32mI (385285) DUAL_CORE: Consumer -> Received: 258 | Core: 1[0m
+[0;32mI (385295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (386285) DUAL_CORE: Producer -> Sent: 259 | Core: 0[0m
+[0;32mI (386285) DUAL_CORE: Consumer -> Received: 259 | Core: 1[0m
+[0;32mI (388285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (388285) DUAL_CORE: Producer -> Sent: 260 | Core: 0[0m
+[0;32mI (388285) DUAL_CORE: Consumer -> Received: 260 | Core: 1[0m
+[0;32mI (388295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (389285) DUAL_CORE: Producer -> Sent: 261 | Core: 0[0m
+[0;32mI (389285) DUAL_CORE: Consumer -> Received: 261 | Core: 1[0m
+[0;32mI (391285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (391285) DUAL_CORE: Producer -> Sent: 262 | Core: 0[0m
+[0;32mI (391285) DUAL_CORE: Consumer -> Received: 262 | Core: 1[0m
+[0;32mI (391295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (392285) DUAL_CORE: Producer -> Sent: 263 | Core: 0[0m
+[0;32mI (392285) DUAL_CORE: Consumer -> Received: 263 | Core: 1[0m
+[0;32mI (394285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (394285) DUAL_CORE: Producer -> Sent: 264 | Core: 0[0m
+[0;32mI (394285) DUAL_CORE: Consumer -> Received: 264 | Core: 1[0m
+[0;32mI (394295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (395285) DUAL_CORE: Producer -> Sent: 265 | Core: 0[0m
+[0;32mI (395285) DUAL_CORE: Consumer -> Received: 265 | Core: 1[0m
+[0;32mI (397285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (397285) DUAL_CORE: Producer -> Sent: 266 | Core: 0[0m
+[0;32mI (397285) DUAL_CORE: Consumer -> Received: 266 | Core: 1[0m
+[0;32mI (397295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (398285) DUAL_CORE: Producer -> Sent: 267 | Core: 0[0m
+[0;32mI (398285) DUAL_CORE: Consumer -> Received: 267 | Core: 1[0m
+[0;32mI (400285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (400285) DUAL_CORE: Producer -> Sent: 268 | Core: 0[0m
+[0;32mI (400285) DUAL_CORE: Consumer -> Received: 268 | Core: 1[0m
+[0;32mI (400295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (401285) DUAL_CORE: Producer -> Sent: 269 | Core: 0[0m
+[0;32mI (401285) DUAL_CORE: Consumer -> Received: 269 | Core: 1[0m
+[0;32mI (403285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (403285) DUAL_CORE: Producer -> Sent: 270 | Core: 0[0m
+[0;32mI (403285) DUAL_CORE: Consumer -> Received: 270 | Core: 1[0m
+[0;32mI (403295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (404285) DUAL_CORE: Producer -> Sent: 271 | Core: 0[0m
+[0;32mI (404285) DUAL_CORE: Consumer -> Received: 271 | Core: 1[0m
+[0;32mI (406285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (406285) DUAL_CORE: Producer -> Sent: 272 | Core: 0[0m
+[0;32mI (406285) DUAL_CORE: Consumer -> Received: 272 | Core: 1[0m
+[0;32mI (406295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (407285) DUAL_CORE: Producer -> Sent: 273 | Core: 0[0m
+[0;32mI (407285) DUAL_CORE: Consumer -> Received: 273 | Core: 1[0m
+[0;32mI (409285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (409285) DUAL_CORE: Producer -> Sent: 274 | Core: 0[0m
+[0;32mI (409285) DUAL_CORE: Consumer -> Received: 274 | Core: 1[0m
+[0;32mI (409295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (410285) DUAL_CORE: Producer -> Sent: 275 | Core: 0[0m
+[0;32mI (410285) DUAL_CORE: Consumer -> Received: 275 | Core: 1[0m
+[0;32mI (412285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (412285) DUAL_CORE: Producer -> Sent: 276 | Core: 0[0m
+[0;32mI (412285) DUAL_CORE: Consumer -> Received: 276 | Core: 1[0m
+[0;32mI (412295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (413285) DUAL_CORE: Producer -> Sent: 277 | Core: 0[0m
+[0;32mI (413285) DUAL_CORE: Consumer -> Received: 277 | Core: 1[0m
+[0;32mI (415285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (415285) DUAL_CORE: Producer -> Sent: 278 | Core: 0[0m
+[0;32mI (415285) DUAL_CORE: Consumer -> Received: 278 | Core: 1[0m
+[0;32mI (415295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (416285) DUAL_CORE: Producer -> Sent: 279 | Core: 0[0m
+[0;32mI (416285) DUAL_CORE: Consumer -> Received: 279 | Core: 1[0m
+[0;32mI (418285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (418285) DUAL_CORE: Producer -> Sent: 280 | Core: 0[0m
+[0;32mI (418285) DUAL_CORE: Consumer -> Received: 280 | Core: 1[0m
+[0;32mI (418295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (419285) DUAL_CORE: Producer -> Sent: 281 | Core: 0[0m
+[0;32mI (419285) DUAL_CORE: Consumer -> Received: 281 | Core: 1[0m
+[0;32mI (421285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (421285) DUAL_CORE: Producer -> Sent: 282 | Core: 0[0m
+[0;32mI (421285) DUAL_CORE: Consumer -> Received: 282 | Core: 1[0m
+[0;32mI (421295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (422285) DUAL_CORE: Producer -> Sent: 283 | Core: 0[0m
+[0;32mI (422285) DUAL_CORE: Consumer -> Received: 283 | Core: 1[0m
+[0;32mI (424285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (424285) DUAL_CORE: Producer -> Sent: 284 | Core: 0[0m
+[0;32mI (424285) DUAL_CORE: Consumer -> Received: 284 | Core: 1[0m
+[0;32mI (424295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (425285) DUAL_CORE: Producer -> Sent: 285 | Core: 0[0m
+[0;32mI (425285) DUAL_CORE: Consumer -> Received: 285 | Core: 1[0m
+[0;32mI (427285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (427285) DUAL_CORE: Producer -> Sent: 286 | Core: 0[0m
+[0;32mI (427285) DUAL_CORE: Consumer -> Received: 286 | Core: 1[0m
+[0;32mI (427295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (428285) DUAL_CORE: Producer -> Sent: 287 | Core: 0[0m
+[0;32mI (428285) DUAL_CORE: Consumer -> Received: 287 | Core: 1[0m
+[0;32mI (430285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (430285) DUAL_CORE: Producer -> Sent: 288 | Core: 0[0m
+[0;32mI (430285) DUAL_CORE: Consumer -> Received: 288 | Core: 1[0m
+[0;32mI (430295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (431285) DUAL_CORE: Producer -> Sent: 289 | Core: 0[0m
+[0;32mI (431285) DUAL_CORE: Consumer -> Received: 289 | Core: 1[0m
+[0;32mI (433285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (433285) DUAL_CORE: Producer -> Sent: 290 | Core: 0[0m
+[0;32mI (433285) DUAL_CORE: Consumer -> Received: 290 | Core: 1[0m
+[0;32mI (433295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (434285) DUAL_CORE: Producer -> Sent: 291 | Core: 0[0m
+[0;32mI (434285) DUAL_CORE: Consumer -> Received: 291 | Core: 1[0m
+[0;32mI (436285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (436285) DUAL_CORE: Producer -> Sent: 292 | Core: 0[0m
+[0;32mI (436285) DUAL_CORE: Consumer -> Received: 292 | Core: 1[0m
+[0;32mI (436295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (437285) DUAL_CORE: Producer -> Sent: 293 | Core: 0[0m
+[0;32mI (437285) DUAL_CORE: Consumer -> Received: 293 | Core: 1[0m
+[0;32mI (439285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (439285) DUAL_CORE: Producer -> Sent: 294 | Core: 0[0m
+[0;32mI (439285) DUAL_CORE: Consumer -> Received: 294 | Core: 1[0m
+[0;32mI (439295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (440285) DUAL_CORE: Producer -> Sent: 295 | Core: 0[0m
+[0;32mI (440285) DUAL_CORE: Consumer -> Received: 295 | Core: 1[0m
+[0;32mI (442285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (442285) DUAL_CORE: Producer -> Sent: 296 | Core: 0[0m
+[0;32mI (442285) DUAL_CORE: Consumer -> Received: 296 | Core: 1[0m
+[0;32mI (442295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (443285) DUAL_CORE: Producer -> Sent: 297 | Core: 0[0m
+[0;32mI (443285) DUAL_CORE: Consumer -> Received: 297 | Core: 1[0m
+[0;32mI (445285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (445285) DUAL_CORE: Producer -> Sent: 298 | Core: 0[0m
+[0;32mI (445285) DUAL_CORE: Consumer -> Received: 298 | Core: 1[0m
+[0;32mI (445295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (446285) DUAL_CORE: Producer -> Sent: 299 | Core: 0[0m
+[0;32mI (446285) DUAL_CORE: Consumer -> Received: 299 | Core: 1[0m
+[0;32mI (448285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (448285) DUAL_CORE: Producer -> Sent: 300 | Core: 0[0m
+[0;32mI (448285) DUAL_CORE: Consumer -> Received: 300 | Core: 1[0m
+[0;32mI (448295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (449285) DUAL_CORE: Producer -> Sent: 301 | Core: 0[0m
+[0;32mI (449285) DUAL_CORE: Consumer -> Received: 301 | Core: 1[0m
+[0;32mI (451285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (451285) DUAL_CORE: Producer -> Sent: 302 | Core: 0[0m
+[0;32mI (451285) DUAL_CORE: Consumer -> Received: 302 | Core: 1[0m
+[0;32mI (451295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (452285) DUAL_CORE: Producer -> Sent: 303 | Core: 0[0m
+[0;32mI (452285) DUAL_CORE: Consumer -> Received: 303 | Core: 1[0m
+[0;32mI (454285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (454285) DUAL_CORE: Producer -> Sent: 304 | Core: 0[0m
+[0;32mI (454285) DUAL_CORE: Consumer -> Received: 304 | Core: 1[0m
+[0;32mI (454295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (455285) DUAL_CORE: Producer -> Sent: 305 | Core: 0[0m
+[0;32mI (455285) DUAL_CORE: Consumer -> Received: 305 | Core: 1[0m
+[0;32mI (457285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (457285) DUAL_CORE: Producer -> Sent: 306 | Core: 0[0m
+[0;32mI (457285) DUAL_CORE: Consumer -> Received: 306 | Core: 1[0m
+[0;32mI (457295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (458285) DUAL_CORE: Producer -> Sent: 307 | Core: 0[0m
+[0;32mI (458285) DUAL_CORE: Consumer -> Received: 307 | Core: 1[0m
+[0;32mI (460285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (460285) DUAL_CORE: Producer -> Sent: 308 | Core: 0[0m
+[0;32mI (460285) DUAL_CORE: Consumer -> Received: 308 | Core: 1[0m
+[0;32mI (460295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (461285) DUAL_CORE: Producer -> Sent: 309 | Core: 0[0m
+[0;32mI (461285) DUAL_CORE: Consumer -> Received: 309 | Core: 1[0m
+[0;32mI (463285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (463285) DUAL_CORE: Producer -> Sent: 310 | Core: 0[0m
+[0;32mI (463285) DUAL_CORE: Consumer -> Received: 310 | Core: 1[0m
+[0;32mI (463295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (464285) DUAL_CORE: Producer -> Sent: 311 | Core: 0[0m
+[0;32mI (464285) DUAL_CORE: Consumer -> Received: 311 | Core: 1[0m
+[0;32mI (466285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (466285) DUAL_CORE: Producer -> Sent: 312 | Core: 0[0m
+[0;32mI (466285) DUAL_CORE: Consumer -> Received: 312 | Core: 1[0m
+[0;32mI (466295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (467285) DUAL_CORE: Producer -> Sent: 313 | Core: 0[0m
+[0;32mI (467285) DUAL_CORE: Consumer -> Received: 313 | Core: 1[0m
+[0;32mI (469285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (469285) DUAL_CORE: Producer -> Sent: 314 | Core: 0[0m
+[0;32mI (469285) DUAL_CORE: Consumer -> Received: 314 | Core: 1[0m
+[0;32mI (469295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (470285) DUAL_CORE: Producer -> Sent: 315 | Core: 0[0m
+[0;32mI (470285) DUAL_CORE: Consumer -> Received: 315 | Core: 1[0m
+[0;32mI (472285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (472285) DUAL_CORE: Producer -> Sent: 316 | Core: 0[0m
+[0;32mI (472285) DUAL_CORE: Consumer -> Received: 316 | Core: 1[0m
+[0;32mI (472295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (473285) DUAL_CORE: Producer -> Sent: 317 | Core: 0[0m
+[0;32mI (473285) DUAL_CORE: Consumer -> Received: 317 | Core: 1[0m
+[0;32mI (475285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (475285) DUAL_CORE: Producer -> Sent: 318 | Core: 0[0m
+[0;32mI (475285) DUAL_CORE: Consumer -> Received: 318 | Core: 1[0m
+[0;32mI (475295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (476285) DUAL_CORE: Producer -> Sent: 319 | Core: 0[0m
+[0;32mI (476285) DUAL_CORE: Consumer -> Received: 319 | Core: 1[0m
+[0;32mI (478285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (478285) DUAL_CORE: Producer -> Sent: 320 | Core: 0[0m
+[0;32mI (478285) DUAL_CORE: Consumer -> Received: 320 | Core: 1[0m
+[0;32mI (478295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (479285) DUAL_CORE: Producer -> Sent: 321 | Core: 0[0m
+[0;32mI (479285) DUAL_CORE: Consumer -> Received: 321 | Core: 1[0m
+[0;32mI (481285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (481285) DUAL_CORE: Producer -> Sent: 322 | Core: 0[0m
+[0;32mI (481285) DUAL_CORE: Consumer -> Received: 322 | Core: 1[0m
+[0;32mI (481295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (482285) DUAL_CORE: Producer -> Sent: 323 | Core: 0[0m
+[0;32mI (482285) DUAL_CORE: Consumer -> Received: 323 | Core: 1[0m
+[0;32mI (484285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (484285) DUAL_CORE: Producer -> Sent: 324 | Core: 0[0m
+[0;32mI (484285) DUAL_CORE: Consumer -> Received: 324 | Core: 1[0m
+[0;32mI (484295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (485285) DUAL_CORE: Producer -> Sent: 325 | Core: 0[0m
+[0;32mI (485285) DUAL_CORE: Consumer -> Received: 325 | Core: 1[0m
+[0;32mI (487285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (487285) DUAL_CORE: Producer -> Sent: 326 | Core: 0[0m
+[0;32mI (487285) DUAL_CORE: Consumer -> Received: 326 | Core: 1[0m
+[0;32mI (487295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (488285) DUAL_CORE: Producer -> Sent: 327 | Core: 0[0m
+[0;32mI (488285) DUAL_CORE: Consumer -> Received: 327 | Core: 1[0m
+[0;32mI (490285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (490285) DUAL_CORE: Producer -> Sent: 328 | Core: 0[0m
+[0;32mI (490285) DUAL_CORE: Consumer -> Received: 328 | Core: 1[0m
+[0;32mI (490295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (491285) DUAL_CORE: Producer -> Sent: 329 | Core: 0[0m
+[0;32mI (491285) DUAL_CORE: Consumer -> Received: 329 | Core: 1[0m
+[0;32mI (493285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (493285) DUAL_CORE: Producer -> Sent: 330 | Core: 0[0m
+[0;32mI (493285) DUAL_CORE: Consumer -> Received: 330 | Core: 1[0m
+[0;32mI (493295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (494285) DUAL_CORE: Producer -> Sent: 331 | Core: 0[0m
+[0;32mI (494285) DUAL_CORE: Consumer -> Received: 331 | Core: 1[0m
+[0;32mI (496285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (496285) DUAL_CORE: Producer -> Sent: 332 | Core: 0[0m
+[0;32mI (496285) DUAL_CORE: Consumer -> Received: 332 | Core: 1[0m
+[0;32mI (496295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (497285) DUAL_CORE: Producer -> Sent: 333 | Core: 0[0m
+[0;32mI (497285) DUAL_CORE: Consumer -> Received: 333 | Core: 1[0m
+[0;32mI (499285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (499285) DUAL_CORE: Producer -> Sent: 334 | Core: 0[0m
+[0;32mI (499285) DUAL_CORE: Consumer -> Received: 334 | Core: 1[0m
+[0;32mI (499295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (500285) DUAL_CORE: Producer -> Sent: 335 | Core: 0[0m
+[0;32mI (500285) DUAL_CORE: Consumer -> Received: 335 | Core: 1[0m
+[0;32mI (502285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (502285) DUAL_CORE: Producer -> Sent: 336 | Core: 0[0m
+[0;32mI (502285) DUAL_CORE: Consumer -> Received: 336 | Core: 1[0m
+[0;32mI (502295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (503285) DUAL_CORE: Producer -> Sent: 337 | Core: 0[0m
+[0;32mI (503285) DUAL_CORE: Consumer -> Received: 337 | Core: 1[0m
+[0;32mI (505285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (505285) DUAL_CORE: Producer -> Sent: 338 | Core: 0[0m
+[0;32mI (505285) DUAL_CORE: Consumer -> Received: 338 | Core: 1[0m
+[0;32mI (505295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (506285) DUAL_CORE: Producer -> Sent: 339 | Core: 0[0m
+[0;32mI (506285) DUAL_CORE: Consumer -> Received: 339 | Core: 1[0m
+[0;32mI (508285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (508285) DUAL_CORE: Producer -> Sent: 340 | Core: 0[0m
+[0;32mI (508285) DUAL_CORE: Consumer -> Received: 340 | Core: 1[0m
+[0;32mI (508295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (509285) DUAL_CORE: Producer -> Sent: 341 | Core: 0[0m
+[0;32mI (509285) DUAL_CORE: Consumer -> Received: 341 | Core: 1[0m
+[0;32mI (511285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (511285) DUAL_CORE: Producer -> Sent: 342 | Core: 0[0m
+[0;32mI (511285) DUAL_CORE: Consumer -> Received: 342 | Core: 1[0m
+[0;32mI (511295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (512285) DUAL_CORE: Producer -> Sent: 343 | Core: 0[0m
+[0;32mI (512285) DUAL_CORE: Consumer -> Received: 343 | Core: 1[0m
+[0;32mI (514285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (514285) DUAL_CORE: Producer -> Sent: 344 | Core: 0[0m
+[0;32mI (514285) DUAL_CORE: Consumer -> Received: 344 | Core: 1[0m
+[0;32mI (514295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (515285) DUAL_CORE: Producer -> Sent: 345 | Core: 0[0m
+[0;32mI (515285) DUAL_CORE: Consumer -> Received: 345 | Core: 1[0m
+[0;32mI (517285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (517285) DUAL_CORE: Producer -> Sent: 346 | Core: 0[0m
+[0;32mI (517285) DUAL_CORE: Consumer -> Received: 346 | Core: 1[0m
+[0;32mI (517295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (518285) DUAL_CORE: Producer -> Sent: 347 | Core: 0[0m
+[0;32mI (518285) DUAL_CORE: Consumer -> Received: 347 | Core: 1[0m
+[0;32mI (520285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (520285) DUAL_CORE: Producer -> Sent: 348 | Core: 0[0m
+[0;32mI (520285) DUAL_CORE: Consumer -> Received: 348 | Core: 1[0m
+[0;32mI (520295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (521285) DUAL_CORE: Producer -> Sent: 349 | Core: 0[0m
+[0;32mI (521285) DUAL_CORE: Consumer -> Received: 349 | Core: 1[0m
+[0;32mI (523285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (523285) DUAL_CORE: Producer -> Sent: 350 | Core: 0[0m
+[0;32mI (523285) DUAL_CORE: Consumer -> Received: 350 | Core: 1[0m
+[0;32mI (523295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (524285) DUAL_CORE: Producer -> Sent: 351 | Core: 0[0m
+[0;32mI (524285) DUAL_CORE: Consumer -> Received: 351 | Core: 1[0m
+[0;32mI (526285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (526285) DUAL_CORE: Producer -> Sent: 352 | Core: 0[0m
+[0;32mI (526285) DUAL_CORE: Consumer -> Received: 352 | Core: 1[0m
+[0;32mI (526295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (527285) DUAL_CORE: Producer -> Sent: 353 | Core: 0[0m
+[0;32mI (527285) DUAL_CORE: Consumer -> Received: 353 | Core: 1[0m
+[0;32mI (529285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (529285) DUAL_CORE: Producer -> Sent: 354 | Core: 0[0m
+[0;32mI (529285) DUAL_CORE: Consumer -> Received: 354 | Core: 1[0m
+[0;32mI (529295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (530285) DUAL_CORE: Producer -> Sent: 355 | Core: 0[0m
+[0;32mI (530285) DUAL_CORE: Consumer -> Received: 355 | Core: 1[0m
+[0;32mI (532285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (532285) DUAL_CORE: Producer -> Sent: 356 | Core: 0[0m
+[0;32mI (532285) DUAL_CORE: Consumer -> Received: 356 | Core: 1[0m
+[0;32mI (532295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (533285) DUAL_CORE: Producer -> Sent: 357 | Core: 0[0m
+[0;32mI (533285) DUAL_CORE: Consumer -> Received: 357 | Core: 1[0m
+[0;32mI (535285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (535285) DUAL_CORE: Producer -> Sent: 358 | Core: 0[0m
+[0;32mI (535285) DUAL_CORE: Consumer -> Received: 358 | Core: 1[0m
+[0;32mI (535295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (536285) DUAL_CORE: Producer -> Sent: 359 | Core: 0[0m
+[0;32mI (536285) DUAL_CORE: Consumer -> Received: 359 | Core: 1[0m
+[0;32mI (538285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (538285) DUAL_CORE: Producer -> Sent: 360 | Core: 0[0m
+[0;32mI (538285) DUAL_CORE: Consumer -> Received: 360 | Core: 1[0m
+[0;32mI (538295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (539285) DUAL_CORE: Producer -> Sent: 361 | Core: 0[0m
+[0;32mI (539285) DUAL_CORE: Consumer -> Received: 361 | Core: 1[0m
+[0;32mI (541285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (541285) DUAL_CORE: Producer -> Sent: 362 | Core: 0[0m
+[0;32mI (541285) DUAL_CORE: Consumer -> Received: 362 | Core: 1[0m
+[0;32mI (541295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (542285) DUAL_CORE: Producer -> Sent: 363 | Core: 0[0m
+[0;32mI (542285) DUAL_CORE: Consumer -> Received: 363 | Core: 1[0m
+[0;32mI (544285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (544285) DUAL_CORE: Producer -> Sent: 364 | Core: 0[0m
+[0;32mI (544285) DUAL_CORE: Consumer -> Received: 364 | Core: 1[0m
+[0;32mI (544295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (545285) DUAL_CORE: Producer -> Sent: 365 | Core: 0[0m
+[0;32mI (545285) DUAL_CORE: Consumer -> Received: 365 | Core: 1[0m
+[0;32mI (547285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (547285) DUAL_CORE: Producer -> Sent: 366 | Core: 0[0m
+[0;32mI (547285) DUAL_CORE: Consumer -> Received: 366 | Core: 1[0m
+[0;32mI (547295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (548285) DUAL_CORE: Producer -> Sent: 367 | Core: 0[0m
+[0;32mI (548285) DUAL_CORE: Consumer -> Received: 367 | Core: 1[0m
+[0;32mI (550285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (550285) DUAL_CORE: Producer -> Sent: 368 | Core: 0[0m
+[0;32mI (550285) DUAL_CORE: Consumer -> Received: 368 | Core: 1[0m
+[0;32mI (550295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (551285) DUAL_CORE: Producer -> Sent: 369 | Core: 0[0m
+[0;32mI (551285) DUAL_CORE: Consumer -> Received: 369 | Core: 1[0m
+[0;32mI (553285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (553285) DUAL_CORE: Producer -> Sent: 370 | Core: 0[0m
+[0;32mI (553285) DUAL_CORE: Consumer -> Received: 370 | Core: 1[0m
+[0;32mI (553295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (554285) DUAL_CORE: Producer -> Sent: 371 | Core: 0[0m
+[0;32mI (554285) DUAL_CORE: Consumer -> Received: 371 | Core: 1[0m
+[0;32mI (556285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (556285) DUAL_CORE: Producer -> Sent: 372 | Core: 0[0m
+[0;32mI (556285) DUAL_CORE: Consumer -> Received: 372 | Core: 1[0m
+[0;32mI (556295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (557285) DUAL_CORE: Producer -> Sent: 373 | Core: 0[0m
+[0;32mI (557285) DUAL_CORE: Consumer -> Received: 373 | Core: 1[0m
+[0;32mI (559285) DUAL_CORE: Heavy Compute Finished | Core: 0[0m
+[0;32mI (559285) DUAL_CORE: Producer -> Sent: 374 | Core: 0[0m
+[0;32mI (559285) DUAL_CORE: Consumer -> Received: 374 | Core: 1[0m
+[0;32mI (559295) DUAL_CORE: Free Heap: 290936 bytes | Core: 1[0m
+[0;32mI (560285) DUAL_CORE: Producer -> Sent: 375 | Core: 0[0m
+[0;32mI (560285) DUAL_CORE: Consumer -> Received: 375 | Core: 1[0m

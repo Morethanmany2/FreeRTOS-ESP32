@@ -1,0 +1,2 @@
+source C:/esp/projects/wifi-sniffer/wifi-sniffer/build/bootloader/gdbinit/symbols
+source C:/esp/projects/wifi-sniffer/wifi-sniffer/build/bootloader/gdbinit/connect

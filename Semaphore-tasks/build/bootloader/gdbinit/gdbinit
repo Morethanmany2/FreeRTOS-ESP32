@@ -1,0 +1,2 @@
+source C:/esp/projects/Semaphore-tasks/build/bootloader/gdbinit/symbols
+source C:/esp/projects/Semaphore-tasks/build/bootloader/gdbinit/connect
