@@ -1,0 +1,2 @@
+source C:/esp/projects/i2c_learning/build/gdbinit/symbols
+source C:/esp/projects/i2c_learning/build/gdbinit/connect

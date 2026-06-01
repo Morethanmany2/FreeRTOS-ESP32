@@ -1,0 +1,61 @@
+Command: ninja all
+[1/52] Linking C static library esp-idf\esp_hal_sd\libesp_hal_sd.a
+[2/52] Linking C static library esp-idf\esp_driver_spi\libesp_driver_spi.a
+[3/52] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[4/52] Linking C static library esp-idf\esp_hal_twai\libesp_hal_twai.a
+[5/52] Linking C static library esp-idf\esp_hal_mcpwm\libesp_hal_mcpwm.a
+[6/52] Linking C static library esp-idf\unity\libunity.a
+[7/52] Linking C static library esp-idf\esp_driver_i2c\libesp_driver_i2c.a
+[8/52] Linking C static library esp-idf\esp_hal_ledc\libesp_hal_ledc.a
+[9/52] Linking C static library esp-idf\esp_hal_pcnt\libesp_hal_pcnt.a
+[10/52] Linking C static library esp-idf\esp_hal_rmt\libesp_hal_rmt.a
+[11/52] Linking C static library esp-idf\esp_hal_lcd\libesp_hal_lcd.a
+[12/52] Linking C static library esp-idf\esp_hal_emac\libesp_hal_emac.a
+[13/52] Linking C static library esp-idf\esp_https_server\libesp_https_server.a
+[14/52] Linking C static library esp-idf\console\libconsole.a
+[15/52] Linking C static library esp-idf\sdmmc\libsdmmc.a
+[16/52] Linking C static library esp-idf\esp_driver_gptimer\libesp_driver_gptimer.a
+[17/52] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[18/52] Linking C static library esp-idf\cmock\libcmock.a
+[19/52] Linking C static library esp-idf\esp_blockdev_util\libesp_blockdev_util.a
+[20/52] Linking C static library esp-idf\driver\libdriver.a
+[21/52] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[22/52] Linking C static library esp-idf\esp_driver_ledc\libesp_driver_ledc.a
+[23/52] Linking C static library esp-idf\esp_driver_pcnt\libesp_driver_pcnt.a
+[24/52] Linking C static library esp-idf\esp_driver_dac\libesp_driver_dac.a
+[25/52] Linking C static library esp-idf\esp_driver_sdio\libesp_driver_sdio.a
+[26/52] Linking C static library esp-idf\esp_driver_mcpwm\libesp_driver_mcpwm.a
+[27/52] Linking C static library esp-idf\esp_driver_rmt\libesp_driver_rmt.a
+[28/52] Linking C static library esp-idf\esp_driver_sd_intf\libesp_driver_sd_intf.a
+[29/52] Linking C static library esp-idf\esp_driver_sdm\libesp_driver_sdm.a
+[30/52] Linking C static library esp-idf\esp_driver_sdspi\libesp_driver_sdspi.a
+[31/52] Linking C static library esp-idf\esp_driver_touch_sens\libesp_driver_touch_sens.a
+[32/52] Linking C static library esp-idf\protocomm\libprotocomm.a
+[33/52] Linking C static library esp-idf\esp_driver_twai\libesp_driver_twai.a
+[34/52] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[35/52] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[36/52] Linking C static library esp-idf\perfmon\libperfmon.a
+[37/52] Linking C static library esp-idf\rt\librt.a
+[38/52] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[39/52] Linking C static library esp-idf\spiffs\libspiffs.a
+[40/52] Linking C static library esp-idf\esp_driver_sdmmc\libesp_driver_sdmmc.a
+[41/52] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\esp\projects\i2c_learning\build\bootloader && C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/esp/projects/i2c_learning/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6650 bytes. 0x9b0 bytes (9%) free.
+[42/52] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[43/52] No install step for 'bootloader'
+[44/52] Completed 'bootloader'
+[45/52] Linking C static library esp-idf\fatfs\libfatfs.a
+[46/52] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/slave.c.obj
+[47/52] Linking C static library esp-idf\main\libmain.a
+[48/52] Generating esp-idf/esp_system/ld/sections.ld
+[49/52] Building C object CMakeFiles/i2c_learning.elf.dir/project_elf_src_esp32.c.obj
+[50/52] Linking CXX executable i2c_learning.elf
+[51/52] Generating binary image from built executable
+esptool v5.3.dev2
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated C:/esp/projects/i2c_learning/build/i2c_learning.bin
+[52/52] C:\Windows\system32\cmd.exe /C "cd /D C:\esp\projects\i2c_learning\build && C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/esp/projects/i2c_learning/build/partition_table/partition-table.bin C:/esp/projects/i2c_learning/build/i2c_learning.bin"
+i2c_learning.bin binary size 0x2ad40 bytes. Smallest app partition is 0x100000 bytes. 0xd52c0 bytes (83%) free.
